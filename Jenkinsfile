@@ -31,7 +31,7 @@ pipeline{
         }
         stage('Build'){
             steps{
-                bat "dotnet src/Web/Web.csproj -c Release"
+                sh "dotnet src/Web/Web.csproj -c Release"
                 }
         }
         stage('Test: Unit Test'){
