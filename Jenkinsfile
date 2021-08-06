@@ -46,7 +46,7 @@ pipeline{
         }        
         stage('Publish'){
             steps{
-                sh "dotnet publish src/Web/Web.csproj"
+                sh "dotnet publish src/Web/Web.csproj -c Release"
                 }
         }                            
     }
